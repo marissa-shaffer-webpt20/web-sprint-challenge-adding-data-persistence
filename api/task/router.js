@@ -15,7 +15,7 @@ router.get("/tasks", async (req, res, next) => {
 })
 
 //CREATE TASK
-router.post('/task', (req, res) => {
+router.post('/tasks', (req, res) => {
     const taskData = req.body;
 
     task.addTask(taskData)
