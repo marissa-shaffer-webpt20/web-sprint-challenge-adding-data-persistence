@@ -1,8 +1,8 @@
 
 exports.seed = async function(knex) {
-  await knex('table_name').insert([
-        {task_id: 1, task_description: 'rowValue1', task_notes:'notes1', task_completed: false},
-        {task_id: 2, task_description: 'rowValue2', task_notes:'notes2', task_completed: false},
-        {task_id: 3, task_cescription: 'rowValue3', task_notes:'notes3', task_completed: false},
+  await knex('tasks').insert([
+        {id: 1, description: 'rowValue1', notes:'notes1', completed: false, project_id: 1},
+        {id: 2, description: 'rowValue2', notes:'notes2', completed: false, project_id: 2},
+        {id: 3, description: 'rowValue3', notes:'notes3', completed: false, project_id: 3},
       ]);
 };
